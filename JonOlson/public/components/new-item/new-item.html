@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <h1 class="newPost">New Post</h1>
+    </div>
+    <form>
+        <div class="col-xs-8 col-xs-offset-4">
+            <div class="form-group">
+                <label for="title"></label>
+                <input type="text" ng-model="item.itemName" id="title" class="form-control" placeholder="title">
+            </div>
+            <div class="form-group">
+                <label for="conditions"></label>
+                <input type="text" ng-model="item.itemCondition" id="condition" class="form-control" placeholder="story">
+            </div>
+            <div class="form-group">
+                <label for="collection"></label>
+                <input type="text" ng-model="item.itemCollection" id="collection" class="form-control" placeholder="item type">
+            </div>
+            <div class="form-group">
+                <label for="image"></label>
+                <input type="url" ng-model="item.itemImageUrl" id="image" class="form-control" placeholder="Img URL">
+            </div>
+            <br>
+            <button type="button" class="btn btn-default btn-lg btn-block post" ng-click="addItem(item)">Post</button>
+        </div>
+    </form>
+</div>
